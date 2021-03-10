@@ -5,4 +5,4 @@ function mediaDasNotas(notas) {
     return array.toFixed(2)
 }
 
-console.log(mediaDasNotas([7.2, 6.3, 7.4,]))
+console.log(mediaDasNotas([7.2, 6.3, 7.4]))
