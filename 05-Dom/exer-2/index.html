@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>exer-2</title>
+  </head>
+  <body>
+    <header>
+      <h1>Verificador de idade</h1>
+    </header>
+
+    <section>
+      <div class="foto">
+        <p>
+          Ano de Nacimento:
+          <input type="number" name="" class="ano" min="0" />
+        </p>
+        <p>
+          Sexo:
+          <input type="radio" id="um" name="radsex" class="masc" checked />
+          <label for="masc">Masculino</label>
+          <input type="radio" id="um" name="radsex" class="fem" />
+          <label for="fem">Feminino</label>
+        </p>
+        <p>
+          <input type="button" value="Verificar" onclick="verificar()" />
+          <input type="button" value="Limpar" onclick="limpar()" />
+        </p>
+        <div class="res">preencha os dados acima para ver o resultado.</div>
+        <img class="imagem" />
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; thales</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
