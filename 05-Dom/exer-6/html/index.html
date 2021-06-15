@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styled.css" />
+    <title>Atividade 1</title>
+  </head>
+  <body oncontextmenu="return false;">
+    <div class="container">
+      <h1>Ofuscador de Textos Atividade 1</h1>
+      <form>
+        <label>Texto original</label>
+        <textarea
+          name="textOriginal"
+          id="text-original"
+          class="text-area"
+          cols="50"
+          rows="7"
+          placeholder="Insira seu texto aqui..."
+        ></textarea>
+        <label>Texto ofuscado</label>
+        <textarea
+          name="textOfuscado"
+          id="text-ofuscado"
+          class="text-area"
+          cols="50"
+          rows="7"
+        ></textarea>
+      </form>
+      <div class="d-flex justify-content-center">
+        <button onclick="ofuscar()" class="btn" id="btn-ofuscar">
+          Ofuscar
+        </button>
+        <button onclick="desofuscar()" class="btn" id="btn-desofuscar">
+          Desofuscar
+        </button>
+      </div>
+    </div>
+    <script src="../javascript/index.js"></script>
+  </body>
+</html>

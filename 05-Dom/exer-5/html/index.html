@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styled.css" />
+    <title>Mapa</title>
+  </head>
+  <body>
+    <header>
+      <h1>Loja Fictícia S.A.</h1>
+    </header>
+
+    <!--container-->
+    <section class="container">
+      <div class="senha-cliente">
+        <h1 id="senha-res" class="senha">Senha</h1>
+        <h3 id="caixa">Caixa</h3>
+      </div>
+
+      <!--box-->
+      <div class="box">
+        <div class="cliente">
+          <h2 class="title">Para cliente:</h2>
+          <p class="descriçao">Escolha o seu tipo de atendimento:</p>
+
+          <button onclick="gerarSenhaComum()">Comum</button>
+          <button onclick="gerarSenhaRapida()">Rápido</button>
+          <button onclick="gerarSenhaPrioritaria()">Prioritário</button>
+
+          <p id="gerar">Sua senha é:</p>
+        </div>
+
+        <div class="caixas">
+          <h2 class="title">Para caixas:</h2>
+          <p class="descriçao">Clique em um caixa para chamar uma senha:</p>
+
+          <button onclick="caixa1()">caixa 1</button>
+          <button onclick="caixa2()">caixa 2</button>
+          <button onclick="caixa3()">caixa 3</button>
+          <button onclick="caixa4()">caixa 4</button>
+        </div>
+      </div>
+      <!--box-->
+    </section>
+    <!--container-->
+    <script src="/javascript/index.js"></script>
+  </body>
+</html>
