@@ -31,9 +31,13 @@ app.put("/produtos/:id", (req, res) => {
     return res.status(400).json({ erro: "Deu erro" });
   }
 
-  const produto = { id, name, preco };
-  produtos[produtoIndex] = produto;
+  produtos[produtoIndex] = {
+    id,
+    name: name ? name : produtos[produtoIndex].name,
+    preco: preco ? preco : produtos[produtoIndex].preco,
+  };
 
+  const produto = { id, name, preco };
   return res.json(produto);
 });
 
