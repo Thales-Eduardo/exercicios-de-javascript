@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  color: #fff;
+  background-color: #292828;
+}
+header {
+  background-color: #020;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+a {
+  text-decoration: none;
+  font-size: 29px;
+  font-weight: bold;
+  color: #fff;
+}
+p {
+  margin-left: 5px;
+}
+section {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
